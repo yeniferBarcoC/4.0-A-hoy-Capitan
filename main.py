@@ -5,12 +5,34 @@
 import utilidades as util
 
 def probar_funciones():
+    """ 
+    Parameters
+    ----------
+
+    Returns
+    -------
+    criatura:string
+        nombre de la criatura a gritar
+    direccion:string
+        Direccion en la que aparece la criatura
+    """ 
     criatura= util.aparecer_criatura()
     direccion=util.aparecer_direccion()
     print(criatura, direccion)
     return criatura,direccion
 
 def formar_frase(criatura,direccion):
+    """ 
+    Parameters
+    ----------
+    criatura:string
+        nombre de la criatura a gritar
+    direccion:string
+        Direccion en la que aparece la criatura
+    Returns
+    -------
+
+    """ 
     articulo_criatura=""
     articulo_direccion=""
     saludo="Ahoy! capitán,"
@@ -20,7 +42,7 @@ def formar_frase(criatura,direccion):
         articulo_criatura="un"
     elif criatura.find("nas")>=0:
         articulo_criatura="unas"
-    elif criatura.find("ena")>=0 and criatura.find("ono")>=0:
+    elif criatura.find("ena")>=0 or criatura.find("ono")>=0:
         articulo_criatura="una"
     elif criatura.find("nes")>=0:
         articulo_criatura="unos"
@@ -33,7 +55,7 @@ def formar_frase(criatura,direccion):
     elif direccion=="proa" or direccion=="popa":
         articulo_direccion="por la"
     
-    print(saludo,articulo_criatura,criatura,articulo_direccion,direccion)
+    print("\n",saludo,articulo_criatura,criatura,articulo_direccion,direccion)
 
 
 #======================================================================
@@ -41,6 +63,9 @@ def formar_frase(criatura,direccion):
 # =====================================================================
 
 # Ejecuta el programa varias veces para ver su funcionamiento
-
-criatura,direccion = probar_funciones()
-formar_frase(criatura,direccion)
+indice = int(input("Por favor ingrese un numero: "))
+contador=0
+while contador<indice:
+    criatura,direccion = probar_funciones()
+    formar_frase(criatura,direccion)
+    contador+=1
