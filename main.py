@@ -55,7 +55,7 @@ def formar_frase(criatura,direccion):
     elif direccion=="proa" or direccion=="popa":
         articulo_direccion="por la"
     
-    print("\n",saludo,articulo_criatura,criatura,articulo_direccion,direccion)
+    print(saludo,articulo_criatura,criatura,articulo_direccion,direccion,"\n")
 
 
 #======================================================================
