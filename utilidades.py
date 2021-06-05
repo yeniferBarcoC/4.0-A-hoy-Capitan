@@ -1,7 +1,7 @@
 """ Modulo generador aleatorio de cadenas #
     Funciones que retornan criaturas marinas
     y ubicaciones del barco 
-    Oscar Franco-Bedoya
+    Yenifer Barco Castrillón
     Mayo 10-2021 """
 
 import random
