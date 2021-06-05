@@ -15,7 +15,7 @@ def formar_frase(criatura,direccion):
     articulo_direccion=""
     saludo="Ahoy! capitán,"
 
-    #Encontrar arcticulo correcto
+    #Encontrar arcticulo de la criatura correcto
     if criatura.find("ken")>=0 or criatura.find("po")>=0:
         articulo_criatura="un"
     elif criatura.find("nas")>=0:
@@ -44,8 +44,3 @@ def formar_frase(criatura,direccion):
 
 criatura,direccion = probar_funciones()
 formar_frase(criatura,direccion)
-
-
-
-
-
